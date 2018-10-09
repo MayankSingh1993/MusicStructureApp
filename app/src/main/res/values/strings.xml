@@ -1,0 +1,8 @@
+<resources >
+    <string name = "app_name" >Music Player</string >
+    <string name = "recent_played" >Recent Played</string >
+    <string name = "favorite_music" >Favorite music</string >
+    <string name = "new_songs" >New Songs</string >
+    <string name = "title_activity_now_play" >NowPlayActivity</string >
+
+</resources >

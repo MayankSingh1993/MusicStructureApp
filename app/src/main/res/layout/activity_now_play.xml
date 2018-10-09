@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "#FFFFFF"
+    android:orientation = "vertical"
+    tools:context = ".NowPlayActivity" >
+    <ImageView
+        android:layout_width = "wrap_content"
+        android:layout_height = "200dp"
+        android:layout_gravity = "center"
+        android:layout_marginTop = "20dp"
+        android:layout_marginBottom = "100dp"
+        android:src = "@drawable/play1" />
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "horizontal" >
+    <ImageButton
+        android:id = "@+id/imageButton6"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1"
+        android:onClick="onPause"
+        android:background = "#FFFFFF"
+        app:srcCompat = "@drawable/pause" />
+        <ImageButton
+        android:id = "@+id/imageButton2"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:onClick="onLoop"
+        android:layout_weight = "1"
+        android:background = "#FFFFFF"
+
+        app:srcCompat = "@drawable/loop" /></LinearLayout >
+    <TextView
+        android:id = "@+id/textView2"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity = "center"
+        android:text = "Song.mp3" />
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "20dp"
+        android:layout_marginBottom = "10dp"
+        android:orientation = "horizontal" >
+        <TextView
+            android:id = "@+id/startDuration"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:text = "00:00" />
+        <SeekBar
+            android:id = "@+id/seekBar2"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "5" />
+         <TextView
+             android:id = "@+id/endDuration"
+             android:layout_width = "wrap_content"
+             android:layout_height = "wrap_content"
+             android:layout_weight = "1"
+             android:gravity = "center"
+             android:text = "00:00" />
+    </LinearLayout >
+
+    <LinearLayout
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center"
+        android:orientation = "horizontal" >
+        <ImageButton
+            android:id = "@+id/imageButton5"
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1"
+            android:background = "#FFFFFF"
+            android:padding = "10dp"
+            app:srcCompat = "@drawable/rewind" />
+        <ImageButton
+            android:id = "@+id/imageButton4"
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:layout_marginStart = "20dp"
+            android:layout_marginEnd = "20dp"
+            android:layout_weight = "1"
+            android:paddingLeft="5dp"
+            android:background = "#FFFFFF"
+            android:onClick = "onButtonClick"
+
+
+            app:srcCompat = "@drawable/play" />
+        <ImageButton
+            android:id = "@+id/imageButton3"
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:layout_marginEnd = "10dp"
+            android:layout_weight = "1"
+            android:background = "#FFFFFF"
+            android:onClick = "onStopButton"
+            android:padding = "10dp"
+            app:srcCompat = "@drawable/forward" />
+        </LinearLayout >
+
+
+
+
+</LinearLayout >
