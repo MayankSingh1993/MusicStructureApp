@@ -36,7 +36,7 @@
         android:layout_weight = "8"
         android:background = "@color/colorWhite"
         android:scaleType = "fitStart"
-        app:srcCompat = "@drawable/trippledot" />
+        app:srcCompat = "@drawable/config" />
 
 
 

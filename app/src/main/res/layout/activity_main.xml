@@ -18,7 +18,7 @@
             <ImageView
                 android:id = "@+id/imageView"
                 style="@style/ImageStyle"
-                android:src="@drawable/images31"/>
+                android:src="@drawable/music12"/>
             <TextView
                 android:id="@+id/recent_music"
                 android:layout_width = "match_parent"
@@ -36,7 +36,7 @@
             <ImageView
                 android:id = "@+id/imageView1"
                 style="@style/ImageStyle"
-                android:src="@drawable/images31"
+                android:src="@drawable/music12"
                  />
             <TextView
                 android:id="@+id/favorite_music"
@@ -55,7 +55,7 @@
             <ImageView
                 android:id = "@+id/imageView2"
                 style="@style/ImageStyle"
-                android:src="@drawable/images31" />
+                android:src="@drawable/music12" />
             <TextView
                 android:id="@+id/new_music"
                 android:layout_width = "match_parent"

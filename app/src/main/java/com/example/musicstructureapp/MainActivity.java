@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView songs = (TextView) findViewById(R.id.recent_music);
+        TextView songs =  findViewById(R.id.recent_music);
         // Set a click listener on that View
         songs.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.

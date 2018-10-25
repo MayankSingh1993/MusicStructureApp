@@ -3,6 +3,6 @@
     <string name = "recent_played" >Recent Played</string >
     <string name = "favorite_music" >Favorite music</string >
     <string name = "new_songs" >New Songs</string >
-    <string name = "title_activity_now_play" >NowPlayActivity</string >
+    <string name = "title_activity_now_play" >NowPlayActivity</string ><string name = "song_mp3" >Song.mp3</string ><string name = "_00_00" >00:00</string >
 
 </resources >

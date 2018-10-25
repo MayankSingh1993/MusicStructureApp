@@ -1,22 +1,22 @@
 package com.example.musicstructureapp;
 
-public class Song {
+class Song {
     /** Song name*/
     private String mSongName;
 
     /** Artist Name*/
     private String mArtistName;
 
-    public Song(String SongName,String ArtistName){
+    Song(String SongName, String ArtistName){
         mSongName = SongName;
         mArtistName = ArtistName;
     }
 
-    public String getmSongName() {
+    String getSongName() {
         return mSongName;
     }
 
-    public String getmArtistName() {
+    String getArtistName() {
         return mArtistName;
     }
 }
