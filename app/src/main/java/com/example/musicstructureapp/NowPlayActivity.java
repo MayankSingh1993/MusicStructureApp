@@ -96,7 +96,6 @@ public class NowPlayActivity extends AppCompatActivity {
     {
         if(mediaPlayer!=null) {
             mediaPlayer.pause();
-            mediaPlayer.release();
             pauseCurrentPosition=mediaPlayer.getCurrentPosition();
         }
     }
