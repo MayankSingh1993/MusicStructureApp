@@ -28,14 +28,14 @@
         android:background = "#FFFFFF"
         app:srcCompat = "@drawable/pause" />
         <ImageButton
-        android:id = "@+id/imageButton2"
-        android:layout_width = "wrap_content"
-        android:layout_height = "wrap_content"
-        android:onClick="onLoop"
-        android:layout_weight = "1"
-        android:background = "#FFFFFF"
+            android:id = "@+id/imageButton2"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:background = "#FFFFFF"
+            android:onClick = "onLoop"
 
-        app:srcCompat = "@drawable/loop" /></LinearLayout >
+            app:srcCompat = "@drawable/loop" /></LinearLayout >
     <TextView
         android:id = "@+id/textView2"
         android:layout_width = "match_parent"
@@ -55,10 +55,10 @@
             android:gravity = "center"
             android:text = "@string/_00_00" />
        <SeekBar
-           android:layout_weight="3"
-           android:id="@+id/seekBar"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
+           android:id = "@+id/seekBar"
+           android:layout_width = "wrap_content"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "3"
 
            />
          <TextView
@@ -76,36 +76,34 @@
         android:layout_gravity = "center"
         android:orientation = "horizontal" >
         <ImageButton
-            android:id = "@+id/imageButton5"
+            android:id = "@+id/backwardButton"
             android:layout_width = "wrap_content"
             android:layout_height = "match_parent"
             android:layout_weight = "1"
-            android:onClick="onPause"
+
             android:background = "#FFFFFF"
+
+            app:srcCompat = "@drawable/baseline_fast_rewind_black_48dp" />
+        <ImageButton
+            android:id = "@+id/playButton"
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+
+            android:layout_weight = "1"
+            android:background = "#FFFFFF"
+
 
             app:srcCompat = "@drawable/baseline_pause_black_48dp" />
         <ImageButton
-            android:id = "@+id/imageButton4"
+            android:id = "@+id/forwardButton"
             android:layout_width = "wrap_content"
             android:layout_height = "match_parent"
 
             android:layout_weight = "1"
             android:background = "#FFFFFF"
-            android:onClick = "onButtonClick"
 
 
-
-            app:srcCompat = "@drawable/baseline_play_arrow_black_48dp" />
-        <ImageButton
-            android:id = "@+id/imageButton3"
-            android:layout_width = "wrap_content"
-            android:layout_height = "match_parent"
-
-            android:layout_weight = "1"
-            android:background = "#FFFFFF"
-            android:onClick = "onStopButton"
-
-            app:srcCompat = "@drawable/baseline_stop_black_48dp" />
+            app:srcCompat = "@drawable/baseline_fast_forward_black_48dp" />
         </LinearLayout >
 
 
