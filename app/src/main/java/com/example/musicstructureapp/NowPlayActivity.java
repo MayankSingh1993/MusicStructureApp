@@ -2,8 +2,10 @@ package com.example.musicstructureapp;
 
 
 import android.annotation.SuppressLint;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.SeekBar;
@@ -17,12 +19,15 @@ public class NowPlayActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     private int pauseCurrentPosition;
     SeekBar seekBar;
-
+    Handler handler;
+    Runnable runnable;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_play);
-        seekBar=findViewById(R.id.seekBar2);
+        seekBar=findViewById(R.id.seekBar);
+
+        handler=new Handler();
 
 
     }
@@ -35,10 +40,44 @@ public class NowPlayActivity extends AppCompatActivity {
             mediaPlayer = MediaPlayer.create(this, R.raw.metallica_the_day_that_never_comes);
             //TextView textView1= findViewById(R.id.startDuration);
             TextView textView2 = findViewById(R.id.endDuration);
-            int songDuration = mediaPlayer.getDuration();
+            final int songDuration = mediaPlayer.getDuration();
             runTimer(songDuration, textView2);
-            mediaPlayer.start();
-            mediaPlayer.setScreenOnWhilePlaying(true);
+            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+            /**
+             *
+             */
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    seekBar.setMax(songDuration);
+
+                    mediaPlayer.start();
+                    changeSeekbar();
+                }
+            });
+
+            //mediaPlayer.setScreenOnWhilePlaying(true);
+            seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                    if(fromUser)
+                    {
+                        mediaPlayer.seekTo(progress);
+                    }
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                }
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                }
+            });
+
             mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
@@ -85,12 +124,7 @@ public class NowPlayActivity extends AppCompatActivity {
 
     }
 
-    public void onLoop(View view) {
-        if(!mediaPlayer.isLooping()) {
-            mediaPlayer.setLooping(true);
 
-        }
-    }
 
     public void onPause(View view)
     {
@@ -100,5 +134,20 @@ public class NowPlayActivity extends AppCompatActivity {
         }
     }
 
+    public void changeSeekbar(){
+        seekBar.setProgress(mediaPlayer.getCurrentPosition());
+        if(mediaPlayer.isPlaying())
+        {
+            runnable=new Runnable() {
+                @Override
+                public void run() {
+                    changeSeekbar();
+                }
+            };
+            handler.postDelayed(runnable,1000);
+        }
+
+
+    }
 
 }

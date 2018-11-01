@@ -6,6 +6,7 @@ class Song {
 
     /** Artist Name*/
     private String mArtistName;
+    //todo:Mayank add image resourceId
 
     Song(String SongName, String ArtistName){
         mSongName = SongName;
