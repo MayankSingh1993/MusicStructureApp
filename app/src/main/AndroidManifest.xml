@@ -29,7 +29,8 @@
             android:name = ".SongActivity"
             android:label = "@string/song_list"
             android:parentActivityName = ".MainActivity" >
-        <!-- Parent activity meta-data to support 4.0 and lower -->
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <!--adding button to go MainActivity-->
             <meta-data
                 android:name = "android.support.PARENT_ACTIVITY"
                 android:value = ".MainActivity" />
@@ -39,6 +40,7 @@
             android:label = "@string/now_playing"
             android:parentActivityName = ".SongActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
+            <!--adding button to go SongActivity-->
             <meta-data
                 android:name = "android.support.PARENT_ACTIVITY"
                 android:value = ".SongActivity" />
@@ -48,6 +50,7 @@
             android:label = "@string/permission_required"
             android:parentActivityName = ".MainActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
+            <!--adding button to go MainActivity-->
             <meta-data
                 android:name = "android.support.PARENT_ACTIVITY"
                 android:value = ".MainActivity" />

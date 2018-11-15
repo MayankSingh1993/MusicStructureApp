@@ -3,14 +3,14 @@
     <color name = "colorPrimary" >#3F51B5</color >
     <color name = "colorPrimaryDark" >#303F9F</color >
     <color name = "colorAccent" >#FF4081</color >
-    <color name="colorLightBlue">#D6EDFB</color>
-    <color name = "colorSky">#00ACEE</color>
-    <color name="colorWhite">#FEFEFE</color>
-    <color name = "colorRed">#E52118</color>
-    <color name = "colorGrey">#D5D6D6</color>
-    <color name = "colorDarkRed1">#BB1E2C</color>
-    <color name = "colorBlack">#000000</color>
+    <color name = "colorLightBlue" >#D6EDFB</color >
+    <color name = "colorSky" >#00ACEE</color >
+    <color name = "colorWhite" >#FEFEFE</color >
+    <color name = "colorRed" >#E52118</color >
+    <color name = "colorGrey" >#D5D6D6</color >
+    <color name = "colorDarkRed1" >#BB1E2C</color >
+    <color name = "colorBlack" >#000000</color >
     <color name = "bac_white" >#FFFFFF</color >
-    <color name = "colorGrey1">#616A75</color>
-    <color name = "colorOrange">#F95A3A</color>
+    <color name = "colorGrey1" >#616A75</color >
+    <color name = "colorOrange" >#F95A3A</color >
 </resources >
