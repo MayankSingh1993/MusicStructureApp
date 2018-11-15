@@ -11,4 +11,6 @@
     <color name = "colorDarkRed1">#BB1E2C</color>
     <color name = "colorBlack">#000000</color>
     <color name = "bac_white" >#FFFFFF</color >
+    <color name = "colorGrey1">#616A75</color>
+    <color name = "colorOrange">#F95A3A</color>
 </resources >
