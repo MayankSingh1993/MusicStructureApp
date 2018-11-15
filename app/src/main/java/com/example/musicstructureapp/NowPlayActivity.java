@@ -22,6 +22,8 @@ public class NowPlayActivity extends AppCompatActivity implements View.OnClickLi
     private ImageButton playButton;
     private MediaPlayer mediaPlayer;
     private int pauseCurrentPosition;
+
+
     SeekBar seekBar;
     Handler handler;
     Runnable runnable;

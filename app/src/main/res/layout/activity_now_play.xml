@@ -12,6 +12,7 @@
         android:layout_width = "match_parent"
         android:layout_height = "@dimen/_300dp"
         android:layout_gravity = "center_vertical"
+        android:layout_marginTop = "@dimen/_20dp"
         android:paddingTop = "@dimen/_20dp"
         android:paddingBottom = "@dimen/_10dp"
         android:src = "@drawable/music_153"
@@ -21,12 +22,12 @@
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:gravity = "center"
-        android:textColor="@color/colorOrange"
         android:lines = "4"
         android:maxLines = "4"
         android:paddingLeft = "@dimen/_10dp"
         android:paddingRight = "@dimen/_10dp"
-        android:text = "@string/song_mp3" />
+        android:text = "@string/song_mp3"
+        android:textColor = "@color/colorOrange" />
     <LinearLayout
         android:layout_width = "match_parent"
         android:layout_height = "@dimen/_20dp"

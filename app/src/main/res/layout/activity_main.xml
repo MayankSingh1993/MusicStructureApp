@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
 
-              xmlns:tools = "http://schemas.android.com/tools"
-              android:layout_width = "match_parent"
-              android:layout_height = "match_parent"
-              android:background = "@color/colorWhite"
-              android:orientation = "vertical"
-              android:padding = "@dimen/_20dp"
-              tools:context = ".MainActivity"
-    >
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/colorWhite"
+    android:orientation = "vertical"
+    android:padding = "@dimen/_20dp"
+    tools:context = ".MainActivity" >
 
     <LinearLayout
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:orientation = "horizontal"
-        tools:ignore = "UseCompoundDrawables"
-        >
+        tools:ignore = "UseCompoundDrawables" >
             <ImageView
                 android:id = "@+id/imageView"
                 style = "@style/ImageStyle"
@@ -29,21 +27,18 @@
                 android:layout_weight = "1"
                 android:gravity = "center"
                 android:text = "@string/all_songs"
-                android:textSize = "@dimen/_20sp"
-                />
+                android:textSize = "@dimen/_20sp" />
     </LinearLayout >
     <LinearLayout
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:orientation = "horizontal"
-        tools:ignore = "UseCompoundDrawables"
-        >
+        tools:ignore = "UseCompoundDrawables" >
             <ImageView
                 android:id = "@+id/imageView1"
                 style = "@style/ImageStyle"
                 android:src = "@drawable/music_148"
-                tools:ignore = "ContentDescription"
-                />
+                tools:ignore = "ContentDescription" />
             <TextView
                 android:id = "@+id/favorite_songs"
                 android:layout_width = "0dp"
@@ -52,8 +47,7 @@
                 android:layout_weight = "1"
                 android:gravity = "center"
                 android:text = "@string/favorite_songs"
-                android:textSize = "@dimen/_20sp"
-                />
+                android:textSize = "@dimen/_20sp" />
     </LinearLayout >
     <LinearLayout
         android:layout_width = "match_parent"
@@ -73,8 +67,7 @@
                 android:layout_weight = "1"
                 android:gravity = "center"
                 android:text = "@string/recent_played"
-                android:textSize = "@dimen/_20sp"
-                />
+                android:textSize = "@dimen/_20sp" />
     </LinearLayout >
 
 </LinearLayout >

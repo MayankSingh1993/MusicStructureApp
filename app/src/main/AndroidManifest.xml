@@ -11,12 +11,14 @@
     <application
         android:allowBackup = "true"
         android:icon = "@mipmap/launcher_icon"
-        android:label = "@string/app_name"
+
         android:roundIcon = "@mipmap/launcher_icon_round"
         android:supportsRtl = "true"
         android:theme = "@style/AppTheme"
         tools:ignore = "AllowBackup,GoogleAppIndexingWarning" >
-        <activity android:name = ".MainActivity" >
+        <activity
+            android:name = ".MainActivity"
+            android:label = "@string/app_name" >
             <intent-filter >
                 <action android:name = "android.intent.action.MAIN" />
 
@@ -25,10 +27,30 @@
         </activity >
         <activity
             android:name = ".SongActivity"
-            android:label = "@string/song_list" />
-        <activity android:name = ".NowPlayActivity" >
+            android:label = "@string/song_list"
+            android:parentActivityName = ".MainActivity" >
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name = "android.support.PARENT_ACTIVITY"
+                android:value = ".MainActivity" />
         </activity >
-        <activity android:name = ".NoSongActivity" >
+        <activity
+            android:name = ".NowPlayActivity"
+            android:label = "@string/now_playing"
+            android:parentActivityName = ".SongActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name = "android.support.PARENT_ACTIVITY"
+                android:value = ".SongActivity" />
+        </activity >
+        <activity
+            android:name = ".NoSongActivity"
+            android:label = "@string/permission_required"
+            android:parentActivityName = ".MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name = "android.support.PARENT_ACTIVITY"
+                android:value = ".MainActivity" />
         </activity >
     </application >
 

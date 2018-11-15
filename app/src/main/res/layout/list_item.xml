@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
     xmlns:tools = "http://schemas.android.com/tools"
     android:layout_width = "match_parent"
     android:layout_height = "wrap_content"
     android:background = "@color/colorWhite"
     android:descendantFocusability = "blocksDescendants"
     android:orientation = "horizontal"
-    android:padding = "@dimen/_16dp" >
+    android:paddingStart = "@dimen/_16dp"
+    android:paddingTop = "@dimen/_16dp"
+    android:paddingEnd = "@dimen/_16dp" >
     <ImageView
         android:id = "@+id/image"
         android:layout_width = "@dimen/_80dp"
@@ -28,12 +31,12 @@
             android:gravity = "bottom"
             android:textColor = "@android:color/background_dark"
             android:textSize = "@dimen/_20sp"
-            tools:text = "Song Name" />
+            tools:text = "@string/song_name" />
         <TextView
             android:id = "@+id/artistNameTextView"
             android:layout_width = "match_parent"
             android:layout_height = "wrap_content"
             android:textColor = "@android:color/background_dark"
-            tools:text = "Artist Name" />
-    </LinearLayout >
+            tools:text = "@string/artist_name" />
+        </LinearLayout >
 </LinearLayout >
