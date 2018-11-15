@@ -2,19 +2,20 @@
 <manifest xmlns:android = "http://schemas.android.com/apk/res/android"
     xmlns:tools = "http://schemas.android.com/tools"
     package = "com.example.musicstructureapp" >
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <!--Since the focus of this article is building a media player app,we need the MEDIA_CONTENT_CONTROL to control media playback-->
-    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
-    <!--READ_PHONE_STATE permission to access phone state to listen to events like incoming calls so you can stop the audio while a call is in progress.-->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name = "android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Since the focus of this article is building a media player app,we need the MEDIA_CONTENT_CONTROL to control media playback -->
+    <permission android:name = "android.permission.MEDIA_CONTENT_CONTROL" />
+
     <application
         android:allowBackup = "true"
-        android:icon = "@mipmap/ic_launcher"
+        android:icon = "@mipmap/launcher_icon"
         android:label = "@string/app_name"
-        android:roundIcon = "@mipmap/ic_launcher_round"
+        android:roundIcon = "@mipmap/launcher_icon_round"
         android:supportsRtl = "true"
         android:theme = "@style/AppTheme"
-        tools:ignore = "GoogleAppIndexingWarning" >
+        tools:ignore = "AllowBackup,GoogleAppIndexingWarning" >
         <activity android:name = ".MainActivity" >
             <intent-filter >
                 <action android:name = "android.intent.action.MAIN" />
@@ -24,8 +25,10 @@
         </activity >
         <activity
             android:name = ".SongActivity"
-            android:label = "@string/recent_played" />
+            android:label = "@string/song_list" />
         <activity android:name = ".NowPlayActivity" >
+        </activity >
+        <activity android:name = ".NoSongActivity" >
         </activity >
     </application >
 

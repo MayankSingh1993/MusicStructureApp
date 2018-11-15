@@ -5,47 +5,31 @@
     xmlns:tools = "http://schemas.android.com/tools"
     android:layout_width = "match_parent"
     android:layout_height = "match_parent"
-    android:background = "#FFFFFF"
+    android:background = "@color/bac_white"
     android:orientation = "vertical"
     tools:context = ".NowPlayActivity" >
     <ImageView
-        android:layout_width = "wrap_content"
-        android:layout_height = "200dp"
-        android:layout_gravity = "center"
-        android:layout_marginTop = "20dp"
-        android:layout_marginBottom = "100dp"
-        android:src = "@drawable/play" />
-    <LinearLayout
         android:layout_width = "match_parent"
-        android:layout_height = "wrap_content"
-        android:orientation = "horizontal" >
-    <ImageButton
-        android:id = "@+id/imageButton6"
-        android:layout_width = "wrap_content"
-        android:layout_height = "wrap_content"
-        android:layout_weight = "1"
-
-        android:background = "#FFFFFF"
-        app:srcCompat = "@drawable/pause" />
-        <ImageButton
-            android:id = "@+id/imageButton2"
-            android:layout_width = "wrap_content"
-            android:layout_height = "wrap_content"
-            android:layout_weight = "1"
-            android:background = "#FFFFFF"
-            android:onClick = "onLoop"
-
-            app:srcCompat = "@drawable/loop" /></LinearLayout >
+        android:layout_height = "@dimen/_300dp"
+        android:layout_gravity = "center_vertical"
+        android:paddingTop = "@dimen/_20dp"
+        android:paddingBottom = "@dimen/_10dp"
+        android:src = "@drawable/music_153"
+        tools:ignore = "ContentDescription" />
     <TextView
-        android:id = "@+id/textView2"
+        android:id = "@+id/song_name"
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:gravity = "center"
+        android:lines = "4"
+        android:maxLines = "4"
+        android:paddingLeft = "@dimen/_10dp"
+        android:paddingRight = "@dimen/_10dp"
         android:text = "@string/song_mp3" />
     <LinearLayout
         android:layout_width = "match_parent"
-        android:layout_height = "20dp"
-        android:layout_marginBottom = "10dp"
+        android:layout_height = "@dimen/_20dp"
+        android:layout_marginBottom = "@dimen/_10dp"
         android:orientation = "horizontal" >
         <TextView
             android:id = "@+id/startDuration"
@@ -54,22 +38,19 @@
             android:layout_weight = "1"
             android:gravity = "center"
             android:text = "@string/_00_00" />
-       <SeekBar
-           android:id = "@+id/seekBar"
-           android:layout_width = "wrap_content"
-           android:layout_height = "wrap_content"
-           android:layout_weight = "3"
-
-           />
-         <TextView
-             android:id = "@+id/endDuration"
-             android:layout_width = "wrap_content"
-             android:layout_height = "wrap_content"
-             android:layout_weight = "1"
-             android:gravity = "center"
-             android:text = "@string/_00_00" />
+        <SeekBar
+            android:id = "@+id/seekBar"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "3" />
+        <TextView
+            android:id = "@+id/endDuration"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:text = "@string/_00_00" />
     </LinearLayout >
-
     <LinearLayout
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
@@ -80,33 +61,24 @@
             android:layout_width = "wrap_content"
             android:layout_height = "match_parent"
             android:layout_weight = "1"
-
-            android:background = "#FFFFFF"
-
-            app:srcCompat = "@drawable/baseline_fast_rewind_black_48dp" />
+            android:background = "@color/bac_white"
+            app:srcCompat = "@drawable/baseline_fast_rewind_black_48dp"
+            tools:ignore = "ContentDescription" />
         <ImageButton
             android:id = "@+id/playButton"
             android:layout_width = "wrap_content"
             android:layout_height = "match_parent"
-
             android:layout_weight = "1"
-            android:background = "#FFFFFF"
-
-
-            app:srcCompat = "@drawable/baseline_pause_black_48dp" />
+            android:background = "@color/bac_white"
+            app:srcCompat = "@drawable/baseline_pause_black_48dp"
+            tools:ignore = "ContentDescription" />
         <ImageButton
             android:id = "@+id/forwardButton"
             android:layout_width = "wrap_content"
             android:layout_height = "match_parent"
-
             android:layout_weight = "1"
-            android:background = "#FFFFFF"
-
-
-            app:srcCompat = "@drawable/baseline_fast_forward_black_48dp" />
-        </LinearLayout >
-
-
-
-
+            android:background = "@color/bac_white"
+            app:srcCompat = "@drawable/baseline_fast_forward_black_48dp"
+            tools:ignore = "ContentDescription" />
+    </LinearLayout >
 </LinearLayout >

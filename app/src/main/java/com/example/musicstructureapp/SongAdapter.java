@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<Song> {
 
+
     SongAdapter(Activity context, ArrayList<Song> songs) {
         super(context, 0, songs);
     }
@@ -27,12 +28,11 @@ public class SongAdapter extends ArrayAdapter<Song> {
         Song currentSong = getItem(position);
 
         TextView songNameTextView = listItemView.findViewById(R.id.songNameTextView);
-
-        songNameTextView.setText(currentSong.getSongName());
+        assert currentSong != null;
+        songNameTextView.setText(currentSong.getmSongName());
 
         TextView artistNameTextView = listItemView.findViewById(R.id.artistNameTextView);
-
-        artistNameTextView.setText(currentSong.getArtistName());
+        artistNameTextView.setText(currentSong.getmArtistName());
 
         return listItemView;
     }
