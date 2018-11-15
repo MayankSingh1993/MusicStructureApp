@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/bac_white"
+    android:orientation = "horizontal"
+    tools:context = ".NowPlayActivity" >
+    <ImageView
+        android:layout_width = "@dimen/_300dp"
+        android:layout_height = "@dimen/_300dp"
+        android:layout_gravity = "center_vertical"
+        android:layout_marginStart="@dimen/_10dp"
+        android:paddingTop = "@dimen/_20dp"
+        android:paddingBottom = "@dimen/_10dp"
+        android:src = "@drawable/music_153"
+        tools:ignore = "ContentDescription" />
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_marginBottom = "@dimen/_10dp"
+        android:orientation = "vertical" >
+         <TextView
+             android:id = "@+id/song_name"
+             android:layout_width = "match_parent"
+             android:layout_height = "wrap_content"
+             android:gravity = "center"
+             android:lines = "4"
+             android:maxLines = "4"
+             android:layout_marginTop="@dimen/_20dp"
+             android:paddingLeft = "@dimen/_10dp"
+             android:paddingRight = "@dimen/_10dp"
+             android:text = "@string/song_mp3" />
+          <LinearLayout
+              android:layout_width = "match_parent"
+              android:layout_height = "@dimen/_20dp"
+              android:layout_marginBottom = "@dimen/_10dp"
+              android:orientation = "horizontal" >
+        <TextView
+            android:id = "@+id/startDuration"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:text = "@string/_00_00" />
+        <SeekBar
+            android:id = "@+id/seekBar"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "3" />
+        <TextView
+            android:id = "@+id/endDuration"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:text = "@string/_00_00" />
+    </LinearLayout >
+    <LinearLayout
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center"
+        android:orientation = "horizontal"
+        android:layout_marginTop="@dimen/_20dp">
+        <ImageButton
+            android:id = "@+id/backwardButton"
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1"
+            android:background = "@color/bac_white"
+            app:srcCompat = "@drawable/baseline_fast_rewind_black_48dp"
+            tools:ignore = "ContentDescription" />
+        <ImageButton
+            android:id = "@+id/playButton"
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1"
+            android:background = "@color/bac_white"
+            app:srcCompat = "@drawable/baseline_pause_black_48dp"
+            tools:ignore = "ContentDescription" />
+        <ImageButton
+            android:id = "@+id/forwardButton"
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1"
+            android:background = "@color/bac_white"
+            app:srcCompat = "@drawable/baseline_fast_forward_black_48dp"
+            tools:ignore = "ContentDescription" />
+    </LinearLayout >
+</LinearLayout >
+</LinearLayout>

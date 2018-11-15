@@ -1,8 +1,11 @@
 <resources >
     <string name = "app_name" >Music Player</string >
+    <string name = "title_activity_now_play" >NowPlayActivity</string >
+    <string name = "song_mp3" >Song.mp3</string >
+    <string name = "_00_00" >00:00</string >
     <string name = "recent_played" >Recent Played</string >
-    <string name = "favorite_music" >Favorite music</string >
-    <string name = "new_songs" >New Songs</string >
-    <string name = "title_activity_now_play" >NowPlayActivity</string ><string name = "song_mp3" >Song.mp3</string ><string name = "_00_00" >00:00</string >
-
+    <string name = "favorite_songs" >Favorite Songs</string >
+    <string name = "all_songs" >All Songs</string >
+    <string name = "song_list" >Song List</string ><string name = "user_requesting_text" >Please restart the app and Grant the STORAGE permission to access the music OR Go Back</string ><string name = "no_songs" >No Songs Available</string >
 </resources >
+

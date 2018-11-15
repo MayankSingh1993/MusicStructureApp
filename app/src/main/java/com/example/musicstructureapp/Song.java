@@ -1,23 +1,81 @@
 package com.example.musicstructureapp;
 
 class Song {
-    /** Song name*/
+    /**
+     * Song name
+     */
     private String mSongName;
+    /**
+     * Song Id
+     */
 
-    /** Artist Name*/
+    private long mSongId;
+    /**
+     * Song Artist Name
+     */
+
     private String mArtistName;
-    //todo:Mayank add image resourceId
+    /**
+     * Song Duration
+     */
+    private int duration;
 
-    Song(String SongName, String ArtistName){
-        mSongName = SongName;
-        mArtistName = ArtistName;
-    }
-
-    String getSongName() {
+    /**
+     * Get Song Name
+     */
+    String getmSongName() {
         return mSongName;
     }
 
-    String getArtistName() {
+    /**
+     * Set Song Name
+     */
+    void setmSongName(String mSongName) {
+        this.mSongName = mSongName;
+    }
+
+    /**
+     * Get Artist Name
+     */
+    String getmArtistName() {
+
         return mArtistName;
     }
+
+    /**
+     * Set Artist Name
+     */
+    void setmArtistName(String mArtistName) {
+        this.mArtistName = mArtistName;
+    }
+
+    /**
+     * Get Song Id
+     */
+    long getmSongId() {
+        return mSongId;
+    }
+
+    /**
+     * Set Song Id
+     */
+    void setmSongId(int mSongId) {
+        this.mSongId = mSongId;
+    }
+
+    /**
+     * Get Song Duration
+     */
+    int getDuration() {
+        return duration;
+    }
+
+    /**
+     * Set Song Duration
+     */
+    void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+
 }

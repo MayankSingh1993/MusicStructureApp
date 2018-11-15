@@ -1,70 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
 
-    xmlns:app = "http://schemas.android.com/apk/res-auto"
-    xmlns:tools = "http://schemas.android.com/tools"
-    android:layout_width = "match_parent"
-    android:layout_height = "match_parent"
-    tools:context = ".MainActivity"
-    android:padding="20dp"
-    android:orientation="vertical"
-    android:background="@color/colorWhite">
+              xmlns:tools = "http://schemas.android.com/tools"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "@color/colorWhite"
+              android:orientation = "vertical"
+              android:padding = "@dimen/_20dp"
+              tools:context = ".MainActivity"
+    >
 
     <LinearLayout
-    android:layout_width = "match_parent"
-    android:layout_height = "wrap_content"
-    android:orientation = "horizontal"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "horizontal"
+        tools:ignore = "UseCompoundDrawables"
         >
             <ImageView
                 android:id = "@+id/imageView"
-                style="@style/ImageStyle"
-                android:src="@drawable/music12"/>
+                style = "@style/ImageStyle"
+                android:src = "@drawable/music_147"
+                tools:ignore = "ContentDescription" />
             <TextView
-                android:id="@+id/recent_music"
-                android:layout_width = "match_parent"
+                android:id = "@+id/all_songs"
+                android:layout_width = "0dp"
                 android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
                 android:layout_weight = "1"
-                android:text = "@string/recent_played"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textSize = "20sp" />
+                android:gravity = "center"
+                android:text = "@string/all_songs"
+                android:textSize = "@dimen/_20sp"
+                />
     </LinearLayout >
     <LinearLayout
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
-        android:orientation = "horizontal" >
+        android:orientation = "horizontal"
+        tools:ignore = "UseCompoundDrawables"
+        >
             <ImageView
                 android:id = "@+id/imageView1"
-                style="@style/ImageStyle"
-                android:src="@drawable/music12"
-                 />
+                style = "@style/ImageStyle"
+                android:src = "@drawable/music_148"
+                tools:ignore = "ContentDescription"
+                />
             <TextView
-                android:id="@+id/favorite_music"
-                android:layout_width = "match_parent"
+                android:id = "@+id/favorite_songs"
+                android:layout_width = "0dp"
                 android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
                 android:layout_weight = "1"
-                android:text = "@string/favorite_music"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textSize = "20sp" />
+                android:gravity = "center"
+                android:text = "@string/favorite_songs"
+                android:textSize = "@dimen/_20sp"
+                />
     </LinearLayout >
     <LinearLayout
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
-        android:orientation = "horizontal" >
+        android:orientation = "horizontal"
+        tools:ignore = "UseCompoundDrawables" >
             <ImageView
                 android:id = "@+id/imageView2"
-                style="@style/ImageStyle"
-                android:src="@drawable/music12" />
+                style = "@style/ImageStyle"
+                android:src = "@drawable/music_149"
+                tools:ignore = "ContentDescription" />
             <TextView
-                android:id="@+id/new_music"
-                android:layout_width = "match_parent"
+                android:id = "@+id/recent_played"
+                android:layout_width = "0dp"
                 android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
                 android:layout_weight = "1"
-                android:text = "@string/new_songs"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textSize = "20sp" />
+                android:gravity = "center"
+                android:text = "@string/recent_played"
+                android:textSize = "@dimen/_20sp"
+                />
     </LinearLayout >
 
 </LinearLayout >
